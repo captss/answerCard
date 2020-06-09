@@ -1,0 +1,32 @@
+{
+  "name": "answerCard",
+  "version": "1.0.0",
+  "description": "答题卡",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/STPACS/answerCard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/STPACS/answerCard/issues"
+  },
+  "homepage": "https://github.com/STPACS/answerCard#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.2.5"
+  },
+  "husky": {
+      "hooks": {
+          "pre-commit": "echo '哈喽，小伙伴们，代码提交信息不规范哟'",
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-push": "echo 提交代码前需要先进行单元测试 && 可以做测试相关"
+      }
+  }
+}
