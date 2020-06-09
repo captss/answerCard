@@ -26,7 +26,7 @@
       "hooks": {
           "pre-commit": "echo '确保按照规则填写提交信息'",
           "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-          "pre-push": "echo '提交代码前需要先进行单元测试 && 可以做测试相关'"
+          "pre-push": "echo '提交代码前需要先进行单元测试    &&   可以做测试相关'"
       }
   }
 }
